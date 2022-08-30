@@ -1,0 +1,32 @@
+table{
+    border-collapse: collapse;
+}
+td{
+    width: 50px;
+    height: 50px;
+
+}
+.col1, .row2 .col3{
+    background-color: blue;
+}
+.col2, .row1 .col3, .row3 .col3{
+    background-color: red;
+}
+.row1 .col1{
+    border-radius: 50% 50% 0 0;
+}
+.row3 .col1{
+    border-radius: 0 0 50% 50%;
+}
+.row1 .col2{
+    border-radius: 50% 0 0 0;
+}
+.row3 .col2{
+    border-radius: 0 0 0 50%;
+}
+.row1 .col3, .row3 .col3{
+    border-radius: 0 50% 50% 0;
+}
+.row2 .col3{
+    border-radius: 50%;
+}

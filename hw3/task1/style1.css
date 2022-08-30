@@ -1,0 +1,24 @@
+p{
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 14px;
+}
+p:nth-child(1){
+    color: #4E0110;
+}
+p:nth-child(2){
+    color: red;
+}
+p:nth-child(3){
+    color: rgb(67, 40, 28);
+}
+p:nth-child(4){
+    color: hsl(210, 12%, 29%);
+}
+p:nth-child(5){
+    color:rgba(46, 64, 87, 90%);
+}
+body{
+    background-image: url("https://i.pinimg.com/236x/fd/78/c7/fd78c7534ed69af190d268a14e2f6a9a.jpg");
+    background-size: cover;
+}
