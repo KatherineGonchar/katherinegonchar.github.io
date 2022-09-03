@@ -1,0 +1,29 @@
+div{
+    display: inline-block;
+    color: white;
+}
+div[style*="background-color: #F00"]{
+    width: 30%;
+    float: left;
+}
+div[style*="background-color: #0F0"]{
+    width: 70%;
+}
+div[style*="background-color: #00F"]{
+    width: 30%;
+    float: right;
+}
+div[style*="background-color: #000"]{
+    width: 70%;
+}
+div[style*="background-color: #F0F"]{
+    width: 30%;
+    float: right;
+}
+div[style*="background-color: #0FF"]{
+    width: 30%;
+    float: left;
+}
+div[style*="background-color: #FF0"]{
+    width: 40%;
+}

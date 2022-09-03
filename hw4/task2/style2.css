@@ -1,0 +1,15 @@
+div{
+    display: inline-block;
+    width: 20%;
+    background-color: green;
+}
+.double-div{
+    background-color: red;
+    width: 80%;
+}
+.f-simple-div{
+    float: right;
+}
+.s-simple-div{
+    float: left;
+}

@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+}
+div{
+    float: left;
+    width: 25%;
+    display: inline-block;
+    border: 1px solid black;
+}

@@ -1,0 +1,15 @@
+#block{
+    display: block;
+}
+#inline{
+    display: inline;
+}
+#inline-block{
+    display: inline-block;
+}
+.list{
+    display: list-item;
+    margin-left: 30px;
+    list-style-type: upper-latin;
+
+}

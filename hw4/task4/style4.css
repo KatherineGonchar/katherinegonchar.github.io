@@ -1,0 +1,17 @@
+div{
+    display: inline-block;
+    background-color: #FF0000;
+    width: 100%;
+}
+div div:nth-child(1){
+    float: left;
+    width: 30%;
+}
+div:nth-child(2){
+    float: right;
+    width: 30%;
+}
+div:nth-child(3){
+    background-color: white;
+    width: 40%;
+}
