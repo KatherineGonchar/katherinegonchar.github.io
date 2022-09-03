@@ -7,9 +7,10 @@ ul{
 }
 #li-2:hover #ul-2{
     display: block;
-
+    position: relative;
+    top: -20px;
     background-color: #FF0000;
 }
-#li-2:hover+li:last-child{
+#li-2:hover+li{
     display: none;
 }
