@@ -1,0 +1,211 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/*NORMALIZE*/
+*{
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    border: 0 none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-x:hidden;
+}
+
+
+
+/*HEADER*/
+.work-schedule i, .location i, .favorites a, .contacts a, .shoping-basket a{
+    font-size: 2em;
+    color: #222222;
+}
+.header span{
+    font-size: 0.9em;
+    font-family: "Roboto", serif;
+}
+.header a{
+    text-decoration: none;
+}
+.offcanvas-body{
+    overflow-x:hidden;
+}
+.fav-item .x-mark, .shoping-basket .x-mark{
+    position: relative;
+    font-size: 1.2em;
+    top: -90px;
+    left: 160px;
+}
+.fav-item .btn, .shoping-basket .btn{
+    font-size: 1.3em;
+}
+.offcanvas-body .d-flex{
+    height: 90%;
+}
+
+
+
+/*NAVIGATION*/
+.navbar{
+    padding: 0;
+}
+.nav-tabs{
+    border-bottom: none;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+.dropdown-menu{
+    position: relative;
+    top: 43px;
+    border-radius: 0;
+}
+.nav-item:hover{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: lightsalmon;
+}
+
+
+
+
+/*DPORDOWN*/
+.female-categories{
+    left: -12px !important;
+    width: 100vw;
+    padding: 10px 0 5px 17px;
+}
+.male-categories{
+    width: 100vw;
+    padding: 10px 0 5px 15px;
+    left: -116px !important;
+}
+.children-categories{
+    left: -250px !important;
+    width: 100vw;
+    padding: 10px 0 5px 17px;
+}
+.female-banner-start img, .female-banner-end img, .male-banner-start img, .male-banner-end img, .children-banner-start img, .children-banner-end img{
+    height: 350px;
+}
+.circle-category:hover img{
+    border-color: coral !important;
+}
+.circle-category:hover span{
+    color: coral;
+}
+.circle-category img{
+    height: 75px;
+    -webkit-transition: 0.2s ease;
+}
+.circle-label{
+    color: black;
+    -webkit-transition: 0.2s ease;
+}
+.categories ul{
+    padding-left: 0;
+    list-style-type: none;
+    list-style-position: outside;
+    height: 315px;
+    gap: 10px 80px;
+}
+.categories ul a{
+    color: black;
+    text-decoration: none;
+    font-weight: normal;
+    position: relative;
+}
+.categories ul a:hover{
+    text-decoration: salmon underline;
+}
+.img-fluid{
+    position: relative;
+    left: 20px;
+}
+
+
+/*SEARCH*/
+.searchform {
+    width: auto;
+    position: relative;
+}
+.searchform input {
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    border-radius: 40px;
+    border: 2px solid gray;
+    background: white;
+    outline: none;
+    font-family: inherit;
+    transition: .3s linear;
+}
+.searchform input:focus {
+    width: 300px;
+    border-color: lightsalmon;
+}
+.search {
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    position: absolute;
+    right: 0;
+}
+.search i{
+    color: gray;
+}
+
+
+
+/*MAIN FORM*/
+p.card-text{
+    margin-bottom: 0.5rem;
+}
+h5.card-title{
+    margin-bottom: 0;
+}
+.main .card a{
+    color: #222222;
+}
+.main .card p{
+    margin: 0;
+}
+.main .card .x-mark{
+    position: absolute;
+    font-size: 1.2em;
+    top: 0;
+    left: 1272px;
+}
+.main .col-10 .d-flex{
+    height: 100%;
+}
+.total h5, .total h4{
+    margin-bottom: 0;
+}
+
+
+
+
+/*FOOTER*/
+.social-footer a{
+    font-size: 2em;
+    color: #222222;
+}
+.footer-links a{
+    color: #222222;
+    font-size: 1.2em;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.footer-links i{
+    color: salmon;
+    margin-right: 5px;
+}
+footer p{
+    margin-bottom: 0;
+}

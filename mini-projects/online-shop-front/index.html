@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Взуття та аксесуари - Шльоп-Шоп.ua</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/bcbd288780.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" media="(min-device-width:1400px)" href="styles/desktop-style.css">
+    <link rel="stylesheet" media="(max-device-width:576px)" href="styles/mobile-style.css">
+</head>
+<body>
+<div class="container-fluid header">
+    <div class="row d-none d-xl-flex d-xxl-flex">
+        <div class="col-4 align-self-center">
+            <div class="row">
+                <div class="col work-schedule d-flex align-items-center">
+                    <i class="fa-regular fa-clock d-inline-block ms-4 me-2"></i>
+                    <div class="d-flex flex-column">
+                        <span>ПН - ПТ: 9:00- 19:00</span>
+                        <span>СБ - НД: Вихідний</span>
+                    </div>
+                </div>
+                <div class="col location d-flex align-items-center">
+                    <i class="fa-solid fa-location-dot d-inline-block me-2"></i>
+                    <div class="d-flex flex-column">
+                        <span>Україна, Харків</span>
+                        <span>пр. Незалежності, 6</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 logo p-2 d-flex justify-content-center">
+            <img class="logo" src="img/logo/logo.png" alt="Логотип Шльоп Шоп">
+        </div>
+        <div class="col-4 align-self-center">
+            <div class="row d-flex justify-content-end">
+                <div class="col-auto favorites">
+                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                       aria-controls="offcanvasRight">
+                        <i class="fa-regular fa-heart"></i>
+                    </a>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                         aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h4 id="offcanvasRightLabel">Обране</h4>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <h5>Обраних товарів: 2</h5>
+                            <hr>
+                            <div class="fav-item d-flex flex-column justify-content-between">
+                                <div class="cards">
+                                    <div class="card mb-3">
+                                        <div class="row g-0">
+                                            <div class="col-auto">
+                                                <img src="img/header/favorite/1.jpg"
+                                                     class="img-fluid rounded-start pt-3 pb-3" alt="...">
+                                            </div>
+                                            <div class="col-6 ms-3">
+                                                <div class="card-body">
+                                                    <a href="#"><h5 class="card-title">Сандалі</h5></a>
+                                                    <p class="card-text"><small class="text-muted">Додано 3 хвилини
+                                                        тому</small></p>
+                                                    <a href="#" class="x-mark d-block"><i class="fa-solid fa-xmark"></i>
+                                                    </a>
+                                                    <h5 class="card-title text-danger pt-3 d-inline-block">519 грн</h5>
+                                                    <span class="text-decoration-line-through text-muted">649 грн</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="row g-0">
+                                            <div class="col-auto">
+                                                <img src="img/header/favorite/2.jpg"
+                                                     class="img-fluid rounded-start pt-3 pb-3" alt="...">
+                                            </div>
+                                            <div class="col-6 ms-3">
+                                                <div class="card-body">
+                                                    <a href="#"><h5 class="card-title">Сірі сандалі</h5></a>
+                                                    <p class="card-text"><small class="text-muted">Додано 2 години 43
+                                                        хвилини тому</small></p>
+                                                    <a href="#" class="x-mark d-block"><i class="fa-solid fa-xmark"></i>
+                                                    </a>
+                                                    <h5 class="card-title pt-3 d-inline-block">549 грн</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-light">Перенести товари до корзини</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto shoping-basket">
+                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightSec"
+                       aria-controls="offcanvasRightSec"><i class="fa-solid fa-basket-shopping"></i></a>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRightSec"
+                         aria-labelledby="offcanvasRightSecLabel">
+                        <div class="offcanvas-header">
+                            <h4 id="offcanvasRightSecLabel">Кошик</h4>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <h5>Товарів в кошику: 1</h5>
+                            <hr>
+                            <div class="fav-item d-flex flex-column justify-content-between">
+                                <div class="card">
+                                    <div class="row g-0">
+                                        <div class="col-auto">
+                                            <img src="img/header/shoping-cart/1.jpg"
+                                                 class="img-fluid rounded-start pt-3 pb-3" alt="...">
+                                        </div>
+                                        <div class="col-6 ms-3">
+                                            <div class="card-body">
+                                                <a href="#"><h5 class="card-title">Чорні лофери</h5></a>
+                                                <p class="card-text"><small class="text-muted">Додано рік і 2 місяці тому</small></p>
+                                                <a href="#" class="x-mark d-block"><i class="fa-solid fa-xmark"></i>
+                                                </a>
+                                                <h5 class="card-title text-danger pt-3 d-inline-block">879 грн</h5>
+                                                <span class="text-decoration-line-through text-muted">1 099 грн</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="pages/placing-order.html" class="btn btn-light">Оформити замовлення</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto contacts">
+                    <a href="#contact-us"><i class="fa-solid fa-phone me-4"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-expand-xxl bg-light sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand d-xxl-none" href="#">
+            <img class="w-50 p-1" src="img/logo/small-logo.png" alt="Логотип Шльоп-Шоп маленького розміру">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-tabs me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">Жінкам</a>
+                    <div class="dropdown-menu female-categories container-fluid">
+                        <div class="row d-none d-xxl-flex">
+                            <div class="col-12 h2">
+                                Жіноче взуття
+                            </div>
+                            <div class="col-auto">
+                                <div class="row">
+                                    <div class="col-7 female-banner-start">
+                                        <img src="img/header/female-1.gif" alt="Рекламний банер жіночого взуття">
+                                    </div>
+                                    <div class="col-3 ms-5">
+                                        <a class="d-flex flex-column align-items-center text-decoration-none circle-category"
+                                           href="#">
+                                            <img src="img/header/female-category-circle-1.png"
+                                                 class="border border-3 mt-4 rounded-circle" alt="">
+                                            <span class="circle-label">Все взуття</span>
+                                        </a>
+                                        <a class="d-flex flex-column align-items-center text-decoration-none circle-category"
+                                           href="#">
+                                            <img src="img/header/female-category-circle-2.png"
+                                                 class="border border-3 mt-1 rounded-circle" alt="">
+                                            <span class="circle-label">Новинки</span>
+                                        </a>
+                                        <a class="d-flex flex-column align-items-center text-decoration-none circle-category"
+                                           href="#">
+                                            <img src="img/header/female-category-circle-3.png"
+                                                 class="border border-3 mt-1 rounded-circle" alt="">
+                                            <span class="circle-label">Бестселери</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-5">
+                                <h3 class="mb-3">Категорії:</h3>
+                                <div class="categories">
+                                    <ul class="d-flex flex-column flex-wrap">
+                                        <li><a href="#">Балетки</a></li>
+                                        <li><a href="#">Снікерси</a></li>
+                                        <li><a href="#">Кросівки</a></li>
+                                        <li><a href="#">Сліпони</a></li>
+                                        <li><a href="#">Кеди</a></li>
+                                        <li><a href="#">Напівчеревики</a></li>
+                                        <li><a href="#">Туфлі</a></li>
+                                        <li><a href="#">Лофери</a></li>
+                                        <li><a href="#">Босоніжки</a></li>
+                                        <li><a href="#">Сандалі</a></li>
+                                        <li><a href="#">Сабо</a></li>
+                                        <li><a href="#">Еспадрильї</a></li>
+                                        <li><a href="#">Шльопанці</a></li>
+                                        <li><a href="#">Мюлі</a></li>
+                                        <li><a href="#">Ботильйони</a></li>
+                                        <li><a href="#">Черевики</a></li>
+                                        <li><a href="#">Зимові Черевики</a></li>
+                                        <li><a href="#">Чоботи</a></li>
+                                        <li><a href="#">Гумові Чоботи</a></li>
+                                        <li><a href="#">Сноубутси</a></li>
+                                        <li><a href="#">Домашнє Взуття</a></li>
+                                        <li><a href="#" class="fw-bold">Нова колекція ➡</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-3 female-banner-end">
+                                <img class="img-fluid" src="img/header/female-2.png" alt="wefwe">
+                            </div>
+                        </div>
+                        <div class="row d-xxl-none">
+                            <div class="col">
+                                <ul>
+                                    <li><a href="#">Балетки</a></li>
+                                    <li><a href="#">Снікерси</a></li>
+                                    <li><a href="#">Кросівки</a></li>
+                                    <li><a href="#">Сліпони</a></li>
+                                    <li><a href="#">Кеди</a></li>
+                                    <li><a href="#">Напівчеревики</a></li>
+                                    <li><a href="#">Туфлі</a></li>
+                                    <li><a href="#">Лофери</a></li>
+                                    <li><a href="#">Босоніжки</a></li>
+                                    <li><a href="#">Сандалі</a></li>
+                                    <li><a href="#">Сабо</a></li>
+                                    <li><a href="#">Еспадрильї</a></li>
+                                    <li><a href="#">Шльопанці</a></li>
+                                    <li><a href="#">Мюлі</a></li>
+                                    <li><a href="#">Ботильйони</a></li>
+                                    <li><a href="#">Черевики</a></li>
+                                    <li><a href="#">Зимові Черевики</a></li>
+                                    <li><a href="#">Чоботи</a></li>
+                                    <li><a href="#">Гумові Чоботи</a></li>
+                                    <li><a href="#">Сноубутси</a></li>
+                                    <li><a href="#">Домашнє Взуття</a></li>
+                                    <li><a href="#" class="fw-bold">Нова колекція ➡</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">Чоловікам</a>
+                    <div class="dropdown-menu male-categories container-fluid">
+                        <div class="row d-none d-xxl-flex">
+                            <div class="col-12 h2">
+                                Чоловіче взуття
+                            </div>
+                            <div class="col-auto d-inline-block male-banner-start">
+                                <img src="img/header/male-1.png" alt="Рекламний банер чоловічого взуття">
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-6 ms-5">
+                                        <h3 class="mb-3">Категорії:</h3>
+                                        <div class="categories">
+                                            <ul class="d-flex flex-column flex-wrap">
+                                                <li><a href="#">Кросівки</a></li>
+                                                <li><a href="#">Напівчеревики</a></li>
+                                                <li><a href="#">Черевики</a></li>
+                                                <li><a href="#">Сліпони</a></li>
+                                                <li><a href="#">Кеди</a></li>
+                                                <li><a href="#">Туфлі</a></li>
+                                                <li><a href="#">Cандалі</a></li>
+                                                <li><a href="#">Шльопанці</a></li>
+                                                <li><a href="#">Трекінгові Черевики</a></li>
+                                                <li><a href="#">Шкіряне Взуття</a></li>
+                                                <li class="mb-4"><a href="#">Домашнє взуття</a></li>
+                                                <li class=" bold h5">Розміри:</li>
+                                                <li><a href="#">Розмір 40</a></li>
+                                                <li><a href="#">Розмір 41</a></li>
+                                                <li><a href="#">Розмір 42</a></li>
+                                                <li><a href="#">Розмір 43</a></li>
+                                                <li><a href="#">Розмір 44</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto ms-5">
+                                        <a class="d-flex flex-column align-items-center text-decoration-none circle-category"
+                                           href="#">
+                                            <img src="img/header/male-category-circle-1.png"
+                                                 class="border border-3 mt-4 rounded-circle" alt="">
+                                            <span class="circle-label">Все взуття</span>
+                                        </a>
+                                        <a class="d-flex flex-column align-items-center text-decoration-none circle-category"
+                                           href="#">
+                                            <img src="img/header/male-category-circle-2.png"
+                                                 class="border border-3 mt-2 rounded-circle" alt="">
+                                            <span class="circle-label">Новинки</span>
+                                        </a>
+                                        <a class="d-flex flex-column align-items-center text-decoration-none circle-category"
+                                           href="#">
+                                            <img src="img/header/male-category-circle-3.png"
+                                                 class="border border-3 mt-2 rounded-circle" alt="">
+                                            <span class="circle-label">Бестселери</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto ms-4 pt-4">
+                                        <a class="d-flex flex-column align-items-center text-decoration-none circle-category"
+                                           href="#">
+                                            <img src="img/header/male-category-circle-4.png"
+                                                 class="border border-3 mt-5 rounded-circle" alt="">
+                                            <span class="circle-label">Більше розмірів</span>
+                                        </a>
+                                        <a class="d-flex flex-column align-items-center text-decoration-none circle-category"
+                                           href="#">
+                                            <img src="img/header/male-category-circle-5.png"
+                                                 class="border border-3 mt-2 rounded-circle" alt="">
+                                            <span class="circle-label fw-bold text-danger">SALE</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 ms-5 male-banner-end">
+                                <img class="ps-2" src="img/header/male-2.gif" alt="wefwe">
+                            </div>
+                        </div>
+                        <div class="row d-xxl-none">
+                            <div class="col">
+                                <ul>
+                                    <li><a href="#">Кросівки</a></li>
+                                    <li><a href="#">Напівчеревики</a></li>
+                                    <li><a href="#">Черевики</a></li>
+                                    <li><a href="#">Сліпони</a></li>
+                                    <li><a href="#">Кеди</a></li>
+                                    <li><a href="#">Туфлі</a></li>
+                                    <li><a href="#">Cандалі</a></li>
+                                    <li><a href="#">Шльопанці</a></li>
+                                    <li><a href="#">Трекінгові Черевики</a></li>
+                                    <li><a href="#">Шкіряне Взуття</a></li>
+                                    <li class="mb-4"><a href="#">Домашнє взуття</a></li>
+                                    <li class=" bold h6">Розміри:</li>
+                                    <li><a href="#">Розмір 40</a></li>
+                                    <li><a href="#">Розмір 41</a></li>
+                                    <li><a href="#">Розмір 42</a></li>
+                                    <li><a href="#">Розмір 43</a></li>
+                                    <li><a href="#">Розмір 44</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">Дітям</a>
+                    <div class="dropdown-menu children-categories container-fluid">
+                        <div class="row d-none d-xxl-flex">
+                            <div class="col-12 h2">
+                                Дитяче взуття
+                            </div>
+                            <div class="col-auto d-inline-block children-banner-start">
+                                <img src="img/header/children-1.png" alt="Рекламний банер дитячого взуття">
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-6 ms-5">
+                                        <h3 class="mb-3">Категорії:</h3>
+                                        <div class="categories">
+                                            <ul class="d-flex flex-column flex-wrap">
+                                                <li><a href="#">Кросівки</a></li>
+                                                <li><a href="#">Кеди</a></li>
+                                                <li><a href="#">Напівчеревики</a></li>
+                                                <li><a href="#">Сліпони</a></li>
+                                                <li><a href="#">Туфлі</a></li>
+                                                <li><a href="#">Балетки</a></li>
+                                                <li><a href="#">Сандалі</a></li>
+                                                <li><a href="#">Шльопанці</a></li>
+                                                <li><a href="#">Черевики</a></li>
+                                                <li><a href="#">Зимові Черевики</a></li>
+                                                <li><a href="#">Чоботи</a></li>
+                                                <li><a href="#">Гумові Чоботи</a></li>
+                                                <li><a href="#">Сноубутси</a></li>
+                                                <li><a href="#">Домашнє Взуття</a></li>
+                                                <li><a href="#" class="fw-bold">Нова колекція ➡</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto ms-5">
+                                        <a class="d-flex flex-column align-items-center text-decoration-none circle-category"
+                                           href="#">
+                                            <img src="img/header/children-category-circle-1.png"
+                                                 class="border border-3 mt-4 rounded-circle" alt="">
+                                            <span class="circle-label">Все взуття</span>
+                                        </a>
+                                        <a class="d-flex flex-column align-items-center text-decoration-none circle-category"
+                                           href="#">
+                                            <img src="img/header/children-category-circle-2.png"
+                                                 class="border border-3 mt-2 rounded-circle" alt="">
+                                            <span class="circle-label">Новинки</span>
+                                        </a>
+                                        <a class="d-flex flex-column align-items-center text-decoration-none circle-category"
+                                           href="#">
+                                            <img src="img/header/children-category-circle-3.png"
+                                                 class="border border-3 mt-2 rounded-circle" alt="">
+                                            <span class="circle-label">Бестселери</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto ms-4 pt-4">
+                                        <a class="d-flex flex-column align-items-center text-decoration-none circle-category"
+                                           href="#">
+                                            <img src="img/header/children-category-circle-4.png"
+                                                 class="border border-3 mt-5 rounded-circle" alt="">
+                                            <span class="circle-label">Для хлопчиків</span>
+                                        </a>
+                                        <a class="d-flex flex-column align-items-center text-decoration-none circle-category"
+                                           href="#">
+                                            <img src="img/header/children-category-circle-5.png"
+                                                 class="border border-3 mt-2 rounded-circle" alt="">
+                                            <span class="circle-label">Для дівчаток</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 ms-4 children-banner-end">
+                                <img class="ps-2" src="img/header/children-2.png" alt="wefwe">
+                            </div>
+                        </div>
+                        <div class="row d-xxl-none">
+                            <div class="col">
+                                <ul>
+                                    <li><a href="#">Кросівки</a></li>
+                                    <li><a href="#">Кеди</a></li>
+                                    <li><a href="#">Напівчеревики</a></li>
+                                    <li><a href="#">Сліпони</a></li>
+                                    <li><a href="#">Туфлі</a></li>
+                                    <li><a href="#">Балетки</a></li>
+                                    <li><a href="#">Сандалі</a></li>
+                                    <li><a href="#">Шльопанці</a></li>
+                                    <li><a href="#">Черевики</a></li>
+                                    <li><a href="#">Зимові Черевики</a></li>
+                                    <li><a href="#">Чоботи</a></li>
+                                    <li><a href="#">Гумові Чоботи</a></li>
+                                    <li><a href="#">Сноубутси</a></li>
+                                    <li><a href="#">Домашнє Взуття</a></li>
+                                    <li><a href="#" class="fw-bold">Нова колекція ➡</a></li>
+                                    <li><a href="#" class="fw-bold">Для дівчаток ➡</a></li>
+                                    <li><a href="#" class="fw-bold">Для хлопців ➡</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link">Аксесуари</a>
+                </li>
+            </ul>
+            <form class="searchform d-flex">
+                <input type="text" placeholder="Пошук...">
+                <button class="search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </div>
+</nav>
+<a href="#">
+    <div class="sale-container container-fluid">
+    </div>
+</a>
+<div class="popular-container">
+    <h4 class="ms-3">Хіти продажів</h4>
+    <div class="d-flex justify-content-between">
+        <h5 class="ms-3">Наші клієнти найчастіше купують</h5>
+        <a href="#" class="me-3"><h6>побачити більше ></h6></a>
+    </div>
+
+    <div class="cards-container d-flex">
+        <a href="pages/product.html">
+            <div class="card bg-light ms-3 mb-3">
+                <img src="img/main-content/popular-cards/1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Чорні Ботильйони</p>
+                    <h5 class="card-title">1849 грн</h5>
+                </div>
+            </div>
+        </a>
+        <a href="pages/product.html">
+            <div class="card bg-light ms-3 mb-3">
+                <img src="img/main-content/popular-cards/2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Білі черевики</p>
+                    <h5 class="card-title">1899 грн</h5>
+                </div>
+            </div>
+        </a>
+        <a href="pages/product.html">
+            <div class="card bg-light ms-3 mb-3">
+                <img src="img/main-content/popular-cards/3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Малинові чоботи</p>
+                    <h5 class="card-title">1749 грн</h5>
+                </div>
+            </div>
+        </a>
+        <a href="pages/product.html">
+            <div class="card bg-light ms-3 mb-3">
+                <img src="img/main-content/popular-cards/4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Чорні черевики</p>
+                    <h5 class="card-title text-danger d-inline-block">1039 грн</h5>
+                    <span class="text-decoration-line-through text-muted">1299 грн</span>
+                </div>
+            </div>
+        </a>
+        <a href="pages/product.html">
+            <div class="card bg-light ms-3 mb-3">
+                <img src="img/main-content/popular-cards/5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Білі кросівки</p>
+                    <h5 class="card-title">799 грн</h5>
+                </div>
+            </div>
+        </a>
+        <a href="pages/product.html">
+            <div class="card bg-light ms-3 mb-3">
+                <img src="img/main-content/popular-cards/6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Рожеві шльопанці</p>
+                    <h5 class="card-title text-danger d-inline-block">439 грн</h5>
+                    <span class="text-decoration-line-through text-muted">549 грн</span>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+
+<footer>
+    <h5 class="text-center mt-3">Соціальні мережі</h5>
+    <div class="social-footer d-flex justify-content-center">
+        <a href="#" class="me-4"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="ms-4"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4 d-flex flex-column footer-links">
+                <a href="#"><i class="fa-solid fa-truck"></i> Доставка і оплата</a>
+                <a href="#"><i class="fa-solid fa-arrow-right-arrow-left"></i> Обмін і повернення</a>
+                <a href="#"><i class="fa-solid fa-shoe-prints"></i> Як обрати розмір?</a>
+                <a href="#"><i class="fa-solid fa-question"></i> Часті запитання</a>
+                <a href="#"><i class="fa-solid fa-lock"></i> Політика конфідеційності</a>
+            </div>
+            <div class="col-8 text-center">
+                <p class="text-muted mt-3">понеділок-пятниця з 9:00 до 19:00</p>
+                <p class="text-muted">субота, неділя - вихідні</p>
+                <div class="d-flex mt-3 justify-content-between">
+                    <a href="#" class="btn btn-light p-2 text-uppercase">
+                        <i class="fa-brands fa-telegram"></i>
+                        <span class="ms-1">Написати в телеграм</span>
+                    </a>
+                    <a href="#" class="btn btn-light p-2 text-uppercase">
+                        <i class="fa-brands fa-viber"></i>
+                        <span class="ms-1">Написати в вайбер</span>
+                    </a>
+                    <a href="#" class="btn btn-light p-2 text-uppercase">
+                        <i class="fa-brands fa-facebook-messenger"></i>
+                        <span class="ms-1">Написати в messenger</span>
+                    </a>
+                </div>
+                <div class="d-flex mt-3 mb-3 flex-column">
+                    <a href="#" class="btn btn-light p2">
+                        <i class="fa-solid fa-phone"></i>
+                        <span id="contact-us" class="ms-1">38 (011) 223 34 45</span>
+                    </a>
+                    <p class="pt-3">E-mail: support@shlop-shop.ua</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+<script src="scripts/index.js"></script>
+</body>
+</html>
