@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Чорні лофери - Шльоп-Шоп.ua</title>
+    <title>Туфлі - Шльоп-Шоп.ua</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/bcbd288780.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../styles/product-style.css">
+    <link rel="stylesheet" href="../styles/category-products-style.css">
 </head>
 <body>
 <div class="container-fluid header">
@@ -465,164 +465,241 @@
         </div>
     </div>
 </nav>
-
-
-<div class="product-container container mt-3">
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Жінкам</a></li>
-            <li class="breadcrumb-item"><a href="#">Ботильйони</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Бежеві ботильйони</li>
-        </ol>
-    </nav>
+<div class="categories-container container">
     <div class="row">
-        <div class="col-5 d-flex flex-wrap">
-            <img src="../img/main-content/product-carousel/1.jpg" alt="">
-            <img src="../img/main-content/product-carousel/2.jpg" alt="">
-            <img src="../img/main-content/product-carousel/4.jpg" alt="">
-            <img src="../img/main-content/product-carousel/5.jpg" alt="">
-        </div>
-        <div class="col-7">
-            <div class="row h-100">
-                <div class="col-3">
+        <div class="col-2 border d-flex flex-column pt-5">
+            <h6 class="fw-bold mt-1">Сортувати</h6>
+            <button type="button" class="btn rounded-pill mt-2 btn-dark">
+                Новинки
+            </button>
+            <button type="button" class="btn rounded-pill mt-1 btn-outline-dark">
+                Популярне
+            </button>
+            <button type="button" class="btn rounded-pill mt-1 btn-outline-dark">
+                Ціна за зростанням
+            </button>
+            <button type="button" class="btn rounded-pill mt-1 btn-outline-dark">
+                Ціна за спаданням
+            </button>
+            <h6 class="mt-3 fw-bold">Розмір</h6>
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn rounded-pill mt-2 me-1 btn-outline-dark">
+                    36
+                </button>
+                <button type="button" class="btn rounded-pill mt-2 me-1 btn-outline-dark">
+                    37
+                </button>
+                <button type="button" class="btn rounded-pill mt-2 btn-outline-dark">
+                    38
+                </button>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn rounded-pill mt-2 me-1 btn-outline-dark">
+                    39
+                </button>
+                <button type="button" class="btn rounded-pill mt-2 me-1 btn-outline-dark">
+                    40
+                </button>
+                <button type="button" class="btn rounded-pill mt-2 btn-outline-dark">
+                    41
+                </button>
+            </div>
+            <h6 class="mt-3 fw-bold">Ціна</h6>
+            <form class="d-flex">
+                <div class="mb-3 me-2">
+                    <label for="price-min" class="form-label"><small>Ціна від</small></label>
+                    <input type="number" class="form-control" id="price-min">
                 </div>
-                <div class="col-6 d-flex flex-column justify-content-center">
-                    <h5>Бежеві ботильйони</h5>
-                    <h3 class="fw-bold">1699 грн</h3>
-                    <h6 class="text-muted mt-2">Розмір</h6>
-                    <div class="sizes">
-                        <button type="button" class="btn rounded-pill btn-outline-secondary">36</button>
-                        <button type="button" class="btn rounded-pill btn-outline-secondary">37</button>
-                        <button type="button" class="btn rounded-pill btn-outline-secondary">38</button>
-                        <button type="button" class="btn rounded-pill btn-outline-secondary">39</button>
-                        <button type="button" class="btn rounded-pill btn-outline-secondary">40</button>
-                        <button type="button" class="btn rounded-pill btn-outline-secondary">41</button>
-                    </div>
-                    <div class="colors">
-                        <h6 class="text-muted mt-3 d-inline-block">Колір -</h6>
-                        <span class="fw-bold">Бежевий</span>
-                    </div>
-                    <p>Відправка сьогодні</p>
-                    <button type="button" class="btn mb-2 btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightSec"
-                            aria-controls="offcanvasRightSec"><i class="fa-solid fa-basket-shopping"></i> Купити
-                    </button>
-                    <div class="accordion mt-5" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    <i class="fa-solid fa-truck me-2"></i>Безкоштовна доставка
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <small>
-                                        <strong>Безкоштовна доставка при замовленні від 1400 грн.</strong> В разі обміну або
-                                        повернення, усіх товарів або частини товарів із цього замовлення, безкоштовна
-                                        доставка анулюється.
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <i class="fa-solid fa-hand-holding-heart me-2"></i>30 днів на повернення
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body"><small>
-                                    Товар підлягає поверненню протягом 30 днів з моменту отримання замовлення. <br>
-                                    Як виглядає весь процес? Все просто! <br>
-                                    <ol>
-                                        <li>Ви відправляєте товар по зворотній адресі.</li>
-                                        <li>Ми повертаємо кошти наступного дня після надходження товару на наш склад.
-                                        </li>
-                                    </ol>
-                                </small>
-
-                                </div>
-                            </div>
+                <div class="mb-3 ms-2">
+                    <label for="price-max" class="form-label"><small>Ціна до</small></label>
+                    <input type="number" class="form-control" id="price-max">
+                </div>
+            </form>
+        </div>
+        <div class="col-10 pt-3 border">
+            <nav aria-label="breadcrumb">
+                <ol class="ms-3 breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Жінкам</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Туфлі</li>
+                </ol>
+            </nav>
+            <h5 class="ms-3 fw-bold">Туфлі</h5>
+            <div class="cards-container cards-f-row d-flex">
+                <a href="product.html">
+                    <div class="card bg-light ms-3 mb-3">
+                        <img src="../img/main-content/category-products/1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Бежеві Туфлі</p>
+                            <h5 class="card-title">399 грн</h5>
                         </div>
                     </div>
-                </div>
-                <div class="col-3">
-
-                </div>
+                </a>
+                <a href="product.html">
+                    <div class="card bg-light ms-3 mb-3">
+                        <img src="../img/main-content/category-products/2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Блакитні туфлі</p>
+                            <h5 class="card-title">899 грн</h5>
+                        </div>
+                    </div>
+                </a>
+                <a href="product.html">
+                    <div class="card bg-light ms-3 mb-3">
+                        <img src="../img/main-content/category-products/3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Рожеві туфлі</p>
+                            <h5 class="card-title">1239 грн</h5>
+                        </div>
+                    </div>
+                </a>
+                <a href="product.html">
+                    <div class="card bg-light ms-3 mb-3">
+                        <img src="../img/main-content/category-products/4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Срібні туфлі</p>
+                            <h5 class="card-title text-danger d-inline-block">439 грн</h5>
+                            <span class="text-decoration-line-through text-muted">549 грн</span>
+                        </div>
+                    </div>
+                </a>
             </div>
-
-
+            <div class="cards-container cards-s-row d-flex">
+                <a href="product.html">
+                    <div class="card bg-light ms-3 mb-3">
+                        <img src="../img/main-content/category-products/5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Білі туфлі</p>
+                            <h5 class="card-title text-danger d-inline-block">799 грн</h5>
+                            <span class="text-decoration-line-through text-muted">999 грн</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="product.html">
+                    <div class="card bg-light ms-3 mb-3">
+                        <img src="../img/main-content/category-products/6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Бежеві туфлі</p>
+                            <h5 class="card-title">1749 грн</h5>
+                        </div>
+                    </div>
+                </a>
+                <a href="product.html">
+                    <div class="card bg-light ms-3 mb-3">
+                        <img src="../img/main-content/category-products/7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Білі туфлі</p>
+                            <h5 class="card-title text-danger d-inline-block">559 грн</h5>
+                            <span class="text-decoration-line-through text-muted">699 грн</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="product.html">
+                    <div class="card bg-light ms-3 mb-3">
+                        <img src="../img/main-content/category-products/8.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Білі туфлі</p>
+                            <h5 class="card-title">1549 грн</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="cards-container cards-s-row d-flex">
+                <a href="product.html">
+                    <div class="card bg-light ms-3 mb-3">
+                        <img src="../img/main-content/category-products/9.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Золоті туфлі</p>
+                            <h5 class="card-title">1239 грн</h5>
+                        </div>
+                    </div>
+                </a>
+                <a href="product.html">
+                    <div class="card bg-light ms-3 mb-3">
+                        <img src="../img/main-content/category-products/10.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Фіолетові туфлі</p>
+                            <h5 class="card-title">1299 грн</h5>
+                        </div>
+                    </div>
+                </a>
+                <a href="product.html">
+                    <div class="card bg-light ms-3 mb-3">
+                        <img src="../img/main-content/category-products/11.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Сірі туфлі</p>
+                            <h5 class="card-title text-danger d-inline-block">319 грн</h5>
+                            <span class="text-decoration-line-through text-muted">399 грн</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="product.html">
+                    <div class="card bg-light ms-3 mb-3">
+                        <img src="../img/main-content/category-products/12.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Малинові туфлі</p>
+                            <h5 class="card-title">1199 грн</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="cards-container cards-s-row d-flex">
+                <a href="product.html">
+                    <div class="card bg-light ms-3 mb-3">
+                        <img src="../img/main-content/category-products/13.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Малинові туфлі</p>
+                            <h5 class="card-title">1749 грн</h5>
+                        </div>
+                    </div>
+                </a>
+                <a href="product.html">
+                    <div class="card bg-light ms-3 mb-3">
+                        <img src="../img/main-content/category-products/14.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Бежеві туфлі</p>
+                            <h5 class="card-title text-danger d-inline-block">719 грн</h5>
+                            <span class="text-decoration-line-through text-muted">899 грн</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="product.html">
+                    <div class="card bg-light ms-3 mb-3">
+                        <img src="../img/main-content/category-products/15.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Блакитні туфлі</p>
+                            <h5 class="card-title">849 грн</h5>
+                        </div>
+                    </div>
+                </a>
+                <a href="product.html">
+                    <div class="card bg-light ms-3 mb-3">
+                        <img src="../img/main-content/category-products/16.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Ясно-Бежеві Туфлі</p>
+                            <h5 class="card-title">1649 грн</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center mt-3">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">&laquo;</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">&raquo;</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
-</div>
-<div class="popular-container">
-    <div class="d-flex mt-3 justify-content-between">
-    <h4 class="ms-3">Нещодавно переглянуті</h4>
-        <a href="#" class="me-3"><h6>побачити більше ></h6></a>
-    </div>
 
-    <div class="cards-container d-flex">
-        <a href="#">
-            <div class="card bg-light ms-3 mb-3">
-                <img src="../img/main-content/recent-cards/1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Бежеві ботфорти</p>
-                    <h5 class="card-title">1349 грн</h5>
-                </div>
-            </div>
-        </a>
-        <a href="#">
-            <div class="card bg-light ms-3 mb-3">
-                <img src="../img/main-content/recent-cards/2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Бежеві босоніжки</p>
-                    <h5 class="card-title">1099 грн</h5>
-                </div>
-            </div>
-        </a>
-        <a href="#">
-            <div class="card bg-light ms-3 mb-3">
-                <img src="../img/main-content/recent-cards/3.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Темно-бежеві ботильйони</p>
-                    <h5 class="card-title">1799 грн</h5>
-                </div>
-            </div>
-        </a>
-        <a href="#">
-            <div class="card bg-light ms-3 mb-3">
-                <img src="../img/main-content/recent-cards/4.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Золоті босоніжки</p>
-                    <h5 class="card-title text-danger d-inline-block">1039 грн</h5>
-                    <span class="text-decoration-line-through text-muted">1299 грн</span>
-                </div>
-            </div>
-        </a>
-        <a href="#">
-            <div class="card bg-light ms-3 mb-3">
-                <img src="../img/main-content/recent-cards/5.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Бежеві кеди</p>
-                    <h5 class="card-title">1299 грн</h5>
-                </div>
-            </div>
-        </a>
-        <a href="#">
-            <div class="card bg-light ms-3 mb-3">
-                <img src="../img/main-content/recent-cards/6.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Рожеві шльопанці</p>
-                    <h5 class="card-title text-danger d-inline-block">439 грн</h5>
-                    <span class="text-decoration-line-through text-muted">549 грн</span>
-                </div>
-            </div>
-        </a>
-    </div>
 </div>
+
+
 <footer>
     <h5 class="text-center mt-3">Соціальні мережі</h5>
     <div class="social-footer d-flex justify-content-center">
