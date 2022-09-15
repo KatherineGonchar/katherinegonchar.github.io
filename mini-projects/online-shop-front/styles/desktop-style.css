@@ -173,7 +173,7 @@ body{
     background-size: cover;
     position: static;
 }
-.popular-container{
+.popular-container, .new-collection-container{
     font-family: 'Montserrat', sans-serif;
 }
 .popular-container h4{
@@ -204,7 +204,7 @@ h5.card-title{
     padding-top: 380px;
 }
 
-.new-collection-container h4{
+.new-collection-container h5{
     margin-bottom: 0;
 }
 .new-collection-container span{
@@ -224,14 +224,9 @@ h5.card-title{
     text-decoration: none;
     color: #222222;
     position: relative;
-    left: 20px;
-    top: -15px;
+    left: -10px;
+    top: 10px;
     -webkit-transition: 0.5s ease;
-}
-.new-collection-container .btn:hover{
-    background: #FCD0A1;
-    border: 1px black inset;
-    animation-duration: 0.5s !important;
 }
 
 
