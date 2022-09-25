@@ -246,3 +246,278 @@ function task15(event){
        console.log(i);
     } while (i!==null && i <= 100);
 }
+
+linksArr[15].addEventListener('click', task16);
+
+function task16(event) {
+    event.preventDefault();
+    let intervalStart = 2;
+    let intervalEnd = +prompt("");
+    let primes = [];
+    for (let i = intervalStart; i < intervalEnd; i++) {
+        if (isPrime(i)) {
+            primes.push(i);
+        }
+    }
+    alert(primes);
+}
+
+function isPrime(number) {
+    if (number === 2) {
+        return true;
+    }
+    for (let j = 2; j < number; j++) {
+        if (number % j === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+linksArr[16].addEventListener('click', task17);
+
+function task17(event) {
+    event.preventDefault();
+    let a = +prompt("");
+    let b = +prompt("");
+    alert((a + b) / 2);
+}
+
+linksArr[17].addEventListener('click', task18);
+
+function task18(event) {
+    event.preventDefault();
+    let a = +prompt("");
+    alert(a * a);
+}
+
+linksArr[18].addEventListener('click', task19);
+
+function task19(event) {
+    event.preventDefault();
+    let a = +prompt("");
+    let b = +prompt("");
+    let c = +prompt("");
+    let min = Math.min(a, b, c);
+    let max = Math.max(a, b, c);
+    alert(max - min);
+}
+
+linksArr[19].addEventListener('click', task20);
+
+function task20(event) {
+    event.preventDefault();
+    let a = +prompt("");
+    if (a % 2 === 0) {
+        alert("парне");
+    } else {
+        alert("непарне");
+    }
+}
+
+linksArr[20].addEventListener('click', task21);
+
+function task21(event) {
+    event.preventDefault();
+    let a = +prompt("");
+    let sum = 0;
+    let numbersAmount = 0;
+    while (a) {
+        let temp = a % 10;
+        a = (a - temp) / 10;
+        sum += temp;
+        numbersAmount++;
+    }
+    alert(`Кількість цифр: ${numbersAmount}, сумма цифр: ${sum}`);
+}
+
+linksArr[21].addEventListener('click', task22);
+
+function task22(event) {
+    event.preventDefault();
+    let coefficient = 2.54;
+    let option = confirm("Для переведення сантиметрів в дюйм, натисніть 'ОК', для протилежної операції - 'Скасування'");
+    let number = +prompt();
+    if (option) {
+        alert(`${number} см = ${number / coefficient} дюймів`);
+    } else {
+        alert(`${number} дюймів = ${number * coefficient} см`);
+    }
+}
+
+linksArr[22].addEventListener('click', task23);
+
+function task23(event) {
+    event.preventDefault();
+    let questions = [
+        {
+            question: "Яка країна найбільша за площею у Європі?",
+            options: [
+                "Польща",
+                "Німеччина",
+                "Україна"
+            ],
+            correct: 3
+        },
+        {
+            question: "Що зображено на державному прапорі Канади?",
+            options: [
+                "Кленовий лист",
+                "Каштан",
+                "Вафля"
+            ],
+            correct: 1
+        },
+        {
+            question: "Які три основні кольори?",
+            options: [
+                "Білий, чорний, сірий",
+                "Червоний, зелений, синій",
+                "Жовтий, рожевий, блакитний"
+            ],
+            correct: 2
+        },
+    ]
+    let usedQuestions = [];
+    let points = 0;
+    for (const question of questions) {
+        let currentQuestion = -1;
+        do {
+            currentQuestion = Math.floor(Math.random() * (questions.length + 1));
+        } while (usedQuestions.includes(currentQuestion));
+        usedQuestions.push(currentQuestion);
+        let answer = +prompt(`${question.question}\n${getOptionsString(question.options)}\n` +
+            `Введіть ваш варіант відповіді`);
+        if (answer === question.correct) {
+            alert("Правильна відповідь!");
+            points++;
+        } else {
+            alert("Неправильна відповідь!");
+            break;
+        }
+    }
+    if (points === questions.length) {
+        alert("Вітаємо з перемогою!");
+    } else {
+        alert(`Пощастить наступного разу.\nНабрано балів: ${points}`);
+    }
+}
+
+function getOptionsString(options) {
+    let optionsString = "";
+    options.forEach((item, index) => {
+        optionsString += `${index + 1}. ${item}\n`;
+    })
+    return optionsString;
+}
+
+linksArr[23].addEventListener('click', task24);
+
+function task24(event) {
+    event.preventDefault();
+    let a = +prompt("");
+    let result = 1;
+    let isEven = false;
+    if (a % 2 === 0) {
+        isEven = true;
+        result = 0;
+    }
+    while (a) {
+        let temp = a % 10;
+        a = (a - temp) / 10;
+        if (isEven) {
+            result += temp;
+        } else {
+            result *= temp;
+        }
+    }
+    alert(result);
+}
+
+linksArr[24].addEventListener('click', task25);
+
+function task25(event) {
+    event.preventDefault();
+    let a = +prompt("");
+    let b = +prompt("");
+    let c = +prompt("");
+    if (a + b > c && a + c > b && b + c > a) {
+        alert("Такий трикутник існує");
+    } else {
+        alert("Такий трикутник не існує");
+    }
+}
+
+linksArr[25].addEventListener('click', task26);
+
+function task26(event) {
+    event.preventDefault();
+    let A = [4, 9];
+    let R = 10;
+    let distanceToA = Math.sqrt(A[0] * A[0] + A[1] * A[1]);
+    if (distanceToA < R) {
+        alert(`Точка з координатами ${A} лежить у колі з радіусом ${R}`);
+    } else {
+        alert(`Точка з координатами ${A} не лежить у колі з радіусом ${R}`);
+    }
+}
+
+linksArr[26].addEventListener('click', task27);
+
+function task27(event) {
+    event.preventDefault();
+    alert("let user = {};\n" +
+        "user.name = \"John\";\n" +
+        "user.surname = \"Smith\";\n" +
+        "user.name = \"Pete\";\n" +
+        "delete user.name;")
+}
+
+linksArr[27].addEventListener('click', task28);
+
+function task28(event) {
+    event.preventDefault();
+    const user = {
+        name: "John"
+    };
+    user.name = "Pete";
+    //const не дозволяє записати нове значення саме в змінну user, але об'єкт(його властивості), що об'явлено як константу є мутабельним
+    alert(user.name);
+}
+
+linksArr[28].addEventListener('click', task29);
+
+function task29(event) {
+    event.preventDefault();
+    let salaries = {
+        John: 100,
+        Ann: 160,
+        Pete: 130
+    };
+    let sum = 0;
+    for (let person in salaries) {
+        sum += salaries[person];
+    }
+    alert(sum);
+}
+
+linksArr[29].addEventListener('click', task30);
+
+function task30(event) {
+    event.preventDefault();
+    let obj = {
+        num1: 2,
+        str1: "str1",
+        num2: 3
+    }
+    multiplyNumeric(obj);
+    alert(JSON.stringify(obj));
+}
+
+function multiplyNumeric(obj) {
+    for (let key in obj) {
+        if (typeof obj[key] === "number") {
+            obj[key] *= 2;
+        }
+    }
+}
