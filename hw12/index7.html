@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>7</title>
+</head>
+<body>
+<script>
+  let body = document.body;
+  body.innerHTML = "<!--" + body.tagName + "-->";
+  alert( body.firstChild.data ); //BODY, так як body.tagName == "BODY"
+</script>
+</body>
+</html>

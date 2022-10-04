@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>11</title>
+</head>
+<body>
+<script>
+    let list = document.createElement("ul");
+    document.body.append(list);
+    while (true){
+        let liContent = prompt("Input something", "");
+        if (liContent){
+            let li = document.createElement("li");
+            li.textContent = liContent;
+            list.append(li);
+        } else break;
+    }
+</script>
+</body>
+</html>

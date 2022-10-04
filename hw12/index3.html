@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3</title>
+    <style>
+        td{
+            height: 35px;
+            width: 35px;
+            border: 1px solid black;
+            font-size: x-large;
+            text-align: center;
+        }
+        table{
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+<script>
+    let table = document.body.firstElementChild;
+    let rows = table.rows;
+    for (let i = 0; i < rows.length; i++){
+        let currentRow = rows[i];
+        let cellsInRow = currentRow.cells;
+        cellsInRow[i].style.backgroundColor = "red";
+        for (let j = 0; j < cellsInRow.length; j++){
+            cellsInRow[j].innerText = (j+1) + ":" + (i+1);
+        }
+    }
+</script>
+</body>
+</html>

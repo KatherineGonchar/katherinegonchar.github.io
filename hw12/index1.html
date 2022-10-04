@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1</title>
+    <style>
+        nav{
+            margin-bottom: 30px;
+        }
+        a{
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="#">Завдання 1</a>
+    <a href="index2.html">Завдання 2</a>
+    <a href="index3.html">Завдання 3</a>
+    <a href="index4.html">Завдання 4</a>
+    <a href="index5.html">Завдання 5</a>
+    <a href="index6.html">Завдання 6</a>
+    <a href="index7.html">Завдання 7</a>
+    <a href="index8.html">Завдання 8</a>
+    <a href="index9.html">Завдання 9</a>
+    <a href="index10.html">Завдання 10</a>
+    <a href="index11.html">Завдання 11</a>
+    <a href="index12.html">Завдання 12</a>
+</nav>
+
+<div>Користувачі:</div>
+<ul>
+    <li>Джон</li>
+    <li>Піт</li>
+</ul>
+<script>
+    let div = document.body.firstElementChild;
+    console.log(div.innerText);
+    let ul = div.nextElementSibling;
+    console.log(ul.innerText);
+    let secondLi = ul.lastElementChild;
+    console.log(secondLi.innerText);
+</script>
+</body>
+</html>
