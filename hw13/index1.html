@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 2px;
+            font-size: x-large;
+        }
+
+        th {
+            background-color: lightgrey;
+            font-weight: bold;
+        }
+        nav{
+            margin-bottom: 30px;
+        }
+        a{
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="#">Завдання 1</a>
+    <a href="index2.html">Завдання 2</a>
+    <a href="index3.html">Завдання 3</a>
+    <a href="index4.html">Завдання 4</a>
+    <a href="index5.html">Завдання 5</a>
+    <a href="index6.html">Завдання 6</a>
+    <a href="index7.html">Завдання 7</a>
+    <a href="index8.html">Завдання 8</a>
+    <a href="index9.html">Завдання 9</a>
+    <a href="index10.html">Завдання 10</a>
+    <a href="index11.html">Завдання 11</a>
+</nav>
+<div id="cal">
+
+</div>
+<script>
+    createCalendar(cal, 2012, 9);
+
+    function createCalendar(elem, year, month) {
+        let table = '<table>' +
+            '<tr>' +
+            '<th>пн</th>' +
+            '<th>вт</th>' +
+            '<th>ср</th>' +
+            '<th>чт</th>' +
+            '<th>пт</th>' +
+            '<th>сб</th>' +
+            '<th>нд</th>' +
+            '</tr>' +
+            '<tr>';
+        let date = new Date(year, month-1);
+        function getDay(date) {
+            let day = date.getDay();
+            if (day === 0) day = 7;
+            return day - 1;
+        }
+        for (let i = 0; i < getDay(date); i++) {
+            table += '<td></td>';
+        }
+        while (date.getMonth() === month-1) {
+            table += '<td>' + date.getDate() + '</td>';
+            if (getDay(date) % 7 === 6) {
+                table += '</tr><tr>';
+            }
+            date.setDate(date.getDate() + 1);
+        }
+        if (getDay(date) !== 0) {
+            for (let i = getDay(date); i < 7; i++) {
+                table += '<td></td>';
+            }
+        }
+        table += '</tr></table>';
+        elem.innerHTML = table;
+    }
+</script>
+</body>
+</html>

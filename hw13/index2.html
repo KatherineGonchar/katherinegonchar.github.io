@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2</title>
+    <style>
+        .notification {
+            position: fixed;
+            z-index: 1000;
+            padding: 5px;
+            border: 1px solid black;
+            font-size: 20px;
+            background: white;
+            text-align: center;
+        }
+
+        .welcome {
+            background: #b80000;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+<h1>Header</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet autem consequatur deleniti ea esse est eum expedita
+    in mollitia, natus nesciunt pariatur provident quaerat quibusdam quo, reiciendis saepe! Atque.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ex id nam non, perferendis quam quibusdam sequi
+    vitae. Aliquid culpa delectus dicta dolorum exercitationem facilis fugit impedit molestiae repudiandae tempora?</p>
+<script>
+    showNotification ({
+        top : 10 , // 10px від верхньої межі вікна (за замовчуванням 0px)
+        right : 10 , // 10px від правого краю вікна (за замовчуванням 0px)
+        html : "Hello!" , // HTML-повідомлення
+        className : "welcome" // Додатковий клас для div (необов'язково)
+    });
+    function showNotification(options = {top : 0 , right : 0}){
+        let div = document.createElement('div');
+        div.className = "notification";
+        if (options.className) {
+            div.classList.add(options.className);
+        }
+        div.style.top = options.top + 'px';
+        div.style.right = options.right + 'px';
+        div.innerHTML = options.html;
+        document.body.append(div);
+        setTimeout(() => div.remove(), 1500);
+    }
+</script>
+</body>
+</html>

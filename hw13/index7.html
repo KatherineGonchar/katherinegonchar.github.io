@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>7</title>
+</head>
+<body>
+<button id="button">Button</button>
+<script>
+    button.addEventListener("click" , () => alert ( "1" ));
+    button.removeEventListener("click" , () => alert ( "1" ));
+    button.onclick = () => alert ( 2 );
+    //1 від addEventListener, а потім 2 від onclick. removeEventListener не працює, тому що їй не передається ф-ція-обробник, а передається нова ф-ція.
+</script>
+</body>
+</html>

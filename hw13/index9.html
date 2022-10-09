@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>9</title>
+    <style>
+        ul{
+            list-style: none;
+            margin: 0;
+            display: none;
+        }
+        div.open ul{
+            display: block;
+        }
+        span::before {
+            content: '▶ ';
+        }
+        div.open span::before{
+            content: '▼ ';
+        }
+    </style>
+</head>
+<body>
+<div>
+    <span>Солодощі (натисни мене)!</span>
+    <ul>
+        <li> Тістечко </li>
+        <li> Пончик </li>
+        <li> Мед </li>
+    </ul>
+</div>
+</body>
+<script>
+    let list = document.querySelector('div');
+    let span = document.querySelector('span');
+
+    span.onclick = function() {
+        list.classList.toggle('open');
+    };
+</script>
+</html>
