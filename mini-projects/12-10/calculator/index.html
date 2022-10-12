@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="shortcut icon" href="calculator.svg">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bcbd288780.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<a href="../index.html"><button class="return btn btn-outline-light"><i class="fa-solid fa-arrow-left"></i></button></a>
+
+<div class="calculator-container container d-flex flex-column justify-content-center align-items-center">
+    <div class="output row border border-light d-flex flex-column justify-content-around align-items-end">
+        <div data-previous-operand class="previous-operand col-auto"></div>
+        <div data-current-operand class="current-operand col-auto"></div>
+    </div>
+    <div class="row d-flex flex-row">
+        <button data-all-clear class="col-3"><i class="fa-solid fa-c"></i></button>
+        <button data-delete class="col-3"><i class="fa-solid fa-delete-left"></i></button>
+        <button data-operation class="col-3">%</button>
+        <button data-operation class="col-3">÷</button>
+    </div>
+    <div class="row">
+        <button data-number class="col-3">1</button>
+        <button data-number class="col-3">2</button>
+        <button data-number class="col-3">3</button>
+        <button data-operation class="col-3">*</button>
+    </div>
+    <div class="row">
+        <button data-number class="col-3">4</button>
+        <button data-number class="col-3">5</button>
+        <button data-number class="col-3">6</button>
+        <button data-operation class="col-3">+</button>
+    </div>
+    <div class="row">
+        <button data-number class="col-3">7</button>
+        <button data-number class="col-3">8</button>
+        <button data-number class="col-3">9</button>
+        <button data-operation class="col-3">-</button>
+    </div>
+    <div class="row">
+        <button data-number class="col-3">.</button>
+        <button data-number class="col-3">0</button>
+        <button data-equals class="col-6">=</button>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

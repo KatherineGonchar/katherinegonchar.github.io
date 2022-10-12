@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Who Wants to Be a Millionaire?</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="shortcut icon" href="controller.svg">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bcbd288780.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<a href="../index.html"><button class="return btn btn-outline-light"><i class="fa-solid fa-arrow-left"></i></button></a>
+<div class="main-container container d-flex flex-column justify-content-center align-items-center">
+    <div class="upper-container row d-flex flex-column justify-content-center align-items-center">
+        <button class="start rounded mb-3">START</button>
+        <button class="rules rounded mb-3">RULES</button>
+        <div class="game-status-container hidden"></div>
+    </div>
+    <div class="next-question-container row hidden mt-3 mb-3">
+        <button class="next-question rounded">NEXT QUESTION</button>
+    </div>
+    <div class="game-container hidden">
+        <div class="help-buttons d-flex justify-content-center mb-3">
+            <button class="second-guess-button rounded me-2">2nd Guess</button>
+            <button class="fifty-fifty rounded ms-2">50 : 50</button>
+        </div>
+        <div class="question-container"></div>
+        <div class="answer-container">
+            <ol type="A" class="answers d-flex flex-row flex-wrap">
+            </ol>
+        </div>
+    </div>
+    <div class="rules-container rounded hidden">
+        <button class="rules-close btn btn-outline-light"><i class="fa-solid fa-xmark"></i></button>
+        <p>
+            Once a player starts the main game, they are asked increasingly difficult general knowledge questions.
+            Each features four possible answers, to which the player must give the correct answer. Doing
+            so wins them a certain amount of money, with tackling more difficult questions increasing their prize fund.
+            <br>
+            During their game, the player has a set of lifelines that they may use only once to help them with a
+            question, as well as two "safety nets" – if a contestant gets a question wrong, but had reached a designated
+            cash value during their game, they will leave with that amount as their prize.
+        </p>
+    </div>
+    <div class="points-container text-center hidden">0</div>
+</div>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

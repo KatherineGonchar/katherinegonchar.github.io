@@ -1,0 +1,76 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #88d9f9 , #fc9684);
+}
+.return{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    height: 50px;
+    width: 50px;
+}
+button.return:hover{
+    background-color: rgba(255, 255, 255, .5);
+    color: #fc9684;
+}
+.calculator-container{
+    min-height: 100vh;
+    min-width: 100vw;
+}
+.col-3{
+    width: 90px;
+    height: 90px;
+}
+.col-6{
+    width: 180px;
+    height: 90px;
+}
+
+.calculator-container .row button{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .60);
+}
+
+.calculator-container .row button:hover {
+    background-color: rgba(255, 255, 255, .9) !important;
+}
+.output{
+    min-height: 120px;
+    height: auto;
+    width: 360px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, .2);
+    /*background-color: rgba(0, 0, 0, 50%);*/
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.output .previous-operand {
+    color: rgba(0, 0, 0, .5);
+    font-size: 1.5rem;
+}
+.output .current-operand {
+    color: black;
+    font-size: 2.5rem;
+}
+[data-operation], [data-delete],[data-all-clear]{
+    color: #f27963;
+    background-color: rgba(255, 255, 255, .4) !important;
+}
+[data-equals]{
+    color: black;
+    background-color: rgba(255, 97, 69, .3) !important;
+}
+button.col-6[data-equals]:hover{
+    background-color: rgba(255, 97, 69, .5) !important;
+}
+[data-operation], [data-equals]{
+    font-weight: bold;
+}

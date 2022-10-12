@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="shortcut icon" href="house.svg">
+    <style>
+        *{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: normal;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(to right, #EAA97C , #B49FD0);
+            font-size: 1.2em;
+        }
+        a{
+            color: black;
+        }
+        a:hover{
+            color: black;
+        }
+        .container{
+            min-height: 100vh;
+            min-width: 100vw;
+        }
+        .container button.btn{
+            height: 60px;
+            width: 200px;
+            cursor: pointer;
+            font-size: 30px;
+            border: 1px solid white;
+            outline: none;
+            background-color: rgba(255, 255, 255, .60);
+        }
+        .container button.btn:hover{
+            background-color: rgba(255, 255, 255, .9) !important;
+        }
+    </style>
+</head>
+<body>
+<div class="container d-flex flex-column justify-content-center align-items-center">
+    <a href="who-wants-to-be-a-millionaire/index.html"><button class="btn rounded mb-4">PLAY</button></a>
+    <a href="calculator/index.html"><button class="btn rounded mb-4">COMPUTE</button></a>
+    <a href="generator/index.html"><button class="btn rounded">GENERATE</button></a>
+</div>
+</body>
+</html>

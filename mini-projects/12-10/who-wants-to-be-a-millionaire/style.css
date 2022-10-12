@@ -1,0 +1,129 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #64bbaa , #bf65d5);
+
+}
+.hidden {
+    visibility: hidden;
+    display: none;
+}
+.return{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    height: 50px;
+    width: 50px;
+}
+button.return:hover{
+    background-color: rgba(255, 255, 255, .5);
+    color: #a258ad;
+}
+li {
+    cursor: pointer;
+}
+.main-container{
+    min-height: 100vh;
+    min-width: 100vw;
+}
+.main-container .row button{
+    height: 60px;
+    width: 140px;
+    cursor: pointer;
+    font-size: 30px;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .60);
+}
+
+.main-container .row button:hover, .second-guess-button:hover, .fifty-fifty:hover {
+    background-color: rgba(255, 255, 255, .9) !important;
+}
+
+.main-container .row button.quit{
+    height: 45px;
+    width: auto;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, .30);
+    margin-bottom: 25px;
+}
+.second-guess-button, .fifty-fifty{
+    height: 45px;
+    width: 130px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .60);
+}
+.next-question{
+    height: 60px;
+    width: 340px !important;
+    font-size: 30px !important;
+}
+.question-container{
+    background-color: rgba(255, 255, 255, .20);
+    padding: 20px 10px;
+    border: 1px solid white;
+    width: 1200px;
+    height: auto;
+    font-size: 20px;
+    overflow-wrap: break-word;
+}
+.answer-container{
+    width: 1200px;
+}
+ol.answers{
+    padding-left: 0;
+}
+.answer{
+    width: 600px;
+    height: auto;
+    overflow-wrap: break-word;
+    list-style-position: inside;
+    padding-inline-start: 0;
+    padding: 10px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .5);
+}
+.answer:hover{
+    background-color: rgba(255, 255, 255, .7) !important;
+}
+.answer::marker{
+    color: #bc33de;
+    font-weight: bold;
+}
+.points-container p:nth-of-type(2){
+    font-weight: bold;
+}
+.game-status-container{
+    font-size: 25px;
+}
+button.rules{
+    background-color: rgba(255, 255, 255, .3) !important;
+}
+.rules-container{
+    width: 500px;
+    font-size: 1.1em;
+    background-color: rgba(255, 255, 255, .2);
+    border: 1px solid white;
+    padding: 25px 15px 5px 15px;
+}
+.rules-close{
+    float: right;
+    position: relative;
+    top: -10px;
+    height: 40px;
+    width: 40px;
+}
+.rules-close:hover{
+    background-color: rgba(255, 255, 255, .5);
+    color: #a258ad;
+}
